@@ -1,0 +1,101 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "T3hUK21UrgE5",
+        "outputId": "6b6acfb6-9dec-42d8-d1c5-65d1109d91bb"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Luas\n",
+            "Menu : \n",
+            " 1. Persegi\n",
+            " 2. Lingkaran\n",
+            " 3. Segitiga\n",
+            " 4. Keluar\n",
+            "Masukkan Pilihan Anda : 1\n",
+            "Masukkan Panjang sisi : 2\n",
+            "Luas Persegi : \n",
+            "4.0\n",
+            "Masih ingin menghitung luas persegi? (y/n) :4\n",
+            "Menu : \n",
+            " 1. Persegi\n",
+            " 2. Lingkaran\n",
+            " 3. Segitiga\n",
+            " 4. Keluar\n",
+            "Masukkan Pilihan Anda : 4\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"Luas\")\n",
+        "\n",
+        "while True:\n",
+        "    print(\"Menu : \" + \"\\n 1. Persegi\" + \"\\n 2. Lingkaran\" + \"\\n 3. Segitiga\" + \"\\n 4. Keluar\")\n",
+        "    pilihan = input(\"Masukkan Pilihan Anda : \")\n",
+        "    if pilihan == '1':\n",
+        "        while True:\n",
+        "            Sisi = float(input(\"Masukkan Panjang sisi : \"))\n",
+        "            Luas_Persegi = Sisi * Sisi\n",
+        "            print(\"Luas Persegi : \")\n",
+        "            print(Luas_Persegi)\n",
+        "            konfirmasi = input(\"Masih ingin menghitung luas persegi? (y/n) :\")\n",
+        "            if konfirmasi == \"y\":\n",
+        "                print(\"\")\n",
+        "            else:\n",
+        "                break\n",
+        "    elif pilihan == '2':\n",
+        "        while True:\n",
+        "            Jari = float(input(\"Masukkan Jari-Jari Lingkaran : \"))\n",
+        "            Luas_Lingkaran = 3.14*Jari*Jari\n",
+        "            print(\"Luas Lingkaran : \")\n",
+        "            print(Luas_Lingkaran)\n",
+        "            konfirmasi = input(\"Masih ingin menghitung luas lingkaran? (y/n) :\")\n",
+        "            if konfirmasi == \"y\":\n",
+        "                print(\"\")\n",
+        "            else:\n",
+        "                break\n",
+        "    elif pilihan == '3':\n",
+        "        while True:\n",
+        "            Alas = float(input(\"Masukkan Panjang Alas : \"))\n",
+        "            Tinggi = float(input(\"Masukkan Tinggi Segitiga : \"))\n",
+        "            Luas_Segitiga = 1/2*(Alas*Tinggi)\n",
+        "            print(\"Luas Segitiga : \")\n",
+        "            print(Luas_Segitiga)\n",
+        "            konfirmasi = input(\"Masih ingin menghitung luas segitiga? (y/n) :\")\n",
+        "            if konfirmasi == \"y\":\n",
+        "                print(\"\")\n",
+        "            else:\n",
+        "                break\n",
+        "    elif pilihan == '4':\n",
+        "        break\n",
+        "    else:\n",
+        "        print(\"Perintah Tidak Dapat di Lakukan\")\n",
+        "        konfirmasi = input(\"Tekan tombol apapun untuk lanjut.\")"
+      ]
+    }
+  ]
+}
